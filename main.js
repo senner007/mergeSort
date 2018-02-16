@@ -7,7 +7,7 @@ function merge(bina, binb) {
 
         while (bina[count1] <= binb[count2] || count2 === binb.length) {
             if (count1 === bina.length) break;
-            beaunewArr.push(bina[count1])
+            newArr.push(bina[count1])
             count1++;
         }
         while (bina[count1] > binb[count2] || count1 === bina.length) {
@@ -15,6 +15,7 @@ function merge(bina, binb) {
             newArr.push(binb[count2])
             count2++;
         }
+
     }
     return newArr;
 }
